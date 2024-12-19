@@ -3,7 +3,9 @@ const cors = require('cors');
 const axios = require('axios');
 
 const app = express();
-const PORT = 3000; // You can change the port if needed
+
+// Use the port from environment variables (for Render) or default to 3000 for local development
+const PORT = process.env.PORT || 3000; 
 
 // Enable CORS for all routes
 app.use(cors());
