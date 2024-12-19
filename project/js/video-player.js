@@ -18,7 +18,7 @@ class VideoPlayer {
   }
 
   setupHLS() {
-    const proxyUrl = 'http://localhost:3000/proxy?url='; // Your CORS proxy URL
+    const proxyUrl = 'https://mjstream.onrender.com/proxy?url='; // Your CORS proxy URL
     const targetUrl = 'https://rriptv.top/m3u8/V/m3u8.php/starhindi.m3u8'; // The original HLS stream URL
 
     this.hls = new Hls();
